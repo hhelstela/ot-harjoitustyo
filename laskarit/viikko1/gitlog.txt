@@ -1,0 +1,113 @@
+commit 4a79e9bbee76c887aade6c23477e1abe3a617766
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:51:43 2023 +0300
+
+    file2>file22 ja poistettiin file1
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit d41ce5d183e60ee69dede689d89a0af621204173
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:45:07 2023 +0300
+
+    lisättiin file tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b0296d0ff1a60640f91c0037e887505ed20052a3
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:38:00 2023 +0300
+
+    muutoksia ekaan ja kolmanteen
+
+ eka.txt    | 6 +++---
+ kolmas.txt | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 912ca64fdb722a50bd40170328b8af5eb372d23e
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:35:48 2023 +0300
+
+    muutettiin tiedoston nimeä
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 8904717d50928db8300126269bedaef6d56eeb34
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:34:26 2023 +0300
+
+    poistettiin toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 032a64ed0bda470450f0fc669906e488fb4d8e2d
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:31:38 2023 +0300
+
+    poistoa ja lisäystä
+
+ tiedosto.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 71b4ef59e6bcea26e3155ddb7b2fb3c5cc68f4cf
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:30:04 2023 +0300
+
+    muutoksia tiedostoon
+
+ tiedosto.txt | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+commit ae4837aec51457b67f7e3e7bcb717fc0a17133cc
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:22:22 2023 +0300
+
+    stuff lisätty
+
+ stuff/tiedosto | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2e4a6fd8fa16d98ece858b1cdffc63a3de191ef4
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:21:09 2023 +0300
+
+    toinen.txt ja kolmas.txt muutoksia
+
+ kolmas.txt | 2 ++
+ toinen.txt | 1 +
+ 2 files changed, 3 insertions(+)
+
+commit 8ffe4db8cd3695c68541d9ca995ae44d4dd10e6e
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:19:58 2023 +0300
+
+    kolmas.txt lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 79746b75a4053f47819bbb1592c233bd141ed123
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:15:54 2023 +0300
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 04e597616f2b4ce48cff503e00d87c6a3575a27a
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Mon Mar 27 14:13:25 2023 +0300
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
