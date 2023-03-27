@@ -1,4 +1,4 @@
-#Ensimmäisen viikon tehtävä
+# Ensimmäisen viikon tehtävä
 *Viikon aiheita*: **Komentorivi, git** ja **md**
 pieni lisäys
 
