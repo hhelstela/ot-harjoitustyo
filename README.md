@@ -1,6 +1,6 @@
 # Harjoitustehtävät
 ## Viikko 1
-*Viikon aiheet*: **Komentorivi** , ** git** ja **md**
+*Viikon aiheet*: **Komentorivi, git ja md**
 
 [gitlog.txt](/laskarit/viikko1/gitlog.txt)
 
