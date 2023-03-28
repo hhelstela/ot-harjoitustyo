@@ -6,3 +6,5 @@
 
 [komentorivi.txt](/laskarit/viikko1/komentorivi.txt)
 
+## Viikko 2
+[vaatimusmäärittely](/dokumentaatio/vaatimusmaarittely.md)
