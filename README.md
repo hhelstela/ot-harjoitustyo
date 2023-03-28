@@ -8,3 +8,4 @@
 
 ## Viikko 2
 [vaatimusmäärittely](/dokumentaatio/vaatimusmaarittely.md)
+[työaikakirjanpito](/dokumentaatio/tuntikirjanpito.md)
