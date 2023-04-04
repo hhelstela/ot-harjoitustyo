@@ -4,6 +4,7 @@ import pygame
 import datetime
 import calendar
 
+os.remove("events.db")
 
 db = sqlite3.connect("events.db")
 db.isolation_level = None
@@ -57,13 +58,13 @@ def ui():
     
     while True:
         for event in pygame.event.get():
-            if event.type == quit:
+            if event.type == pygame.QUIT:
                 pygame.quit()
             ### LISÄÄ EVENT HANDLER JOLLA LISÄTÄÄN TEKSTIÄ KALENTERIMERKINTÄÄN
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 pass
+            pygame.display.update()
         clock.tick(600)
-        pygame.display.update()
 
 
 def main():
@@ -82,6 +83,6 @@ def all_events():
 
 
 
-ui()
+#ui()
 #main()
 #all_events()
