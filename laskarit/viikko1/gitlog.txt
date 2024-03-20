@@ -1,0 +1,104 @@
+commit a2ff7286eb250526d39544a9aafe559f0d760030
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 21:12:23 2024 +0200
+
+    file22
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 12acc6c909e7608f1b83c55aab631820a0039866
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 21:09:43 2024 +0200
+
+    lisätty tiedostoja hakemisto
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit e2656ada3cb273d0142eacad136f94bc4bd89a3c
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 21:05:03 2024 +0200
+
+    muutettiin tekstitiedostoja
+
+ eka.txt    | 8 ++++++++
+ kolmas.txt | 2 +-
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+
+commit 70c417e075dcaa13145df598f07d1fdc7a07c555
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 21:03:33 2024 +0200
+
+    muutettiin tiedosto.txt nimi
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b11b3356affc4368c0049bbdfae92bd1511e8c0b
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 21:02:02 2024 +0200
+
+    poistettiin toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit e9c2918044727e7f4400d8f1261e7b9223193503
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 21:00:20 2024 +0200
+
+    tiedosto.txt ohjeiden lisäys
+
+ tiedosto.txt | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+commit d078e6be5609cd88ae573571c4a1a9d9061f7a19
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 20:55:52 2024 +0200
+
+    stuff lisätty
+
+ stuff/juttu.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0ff13c359caf0bb042799fcd2130f18d4f31de74
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 20:54:44 2024 +0200
+
+    piti vielä lisätä stagingiin
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit ea3ae829f5b82771bcbedb1d48e4eb1416509242
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 20:53:27 2024 +0200
+
+    kolmas.txt lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 10747a2adc0aee66c6bdf5e297fc6d71fe7d3837
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 20:51:19 2024 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 9b27d925bd34419d142cca5ae108e3a19b226898
+Author: Henri Helstelä <henrihelstela@hotmail.fi>
+Date:   Wed Mar 20 20:49:38 2024 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
