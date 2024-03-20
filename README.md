@@ -9,3 +9,5 @@
 [komentorivi.txt](https://github.com/hhelstela/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
 
 #### Viikko 2
+
+#### Viikko 3
