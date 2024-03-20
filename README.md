@@ -1,2 +1,9 @@
 ## Ohjelmistotekniikka harjoitustyö
-Haluaisin toteuttaa **kalenterisovelluksen**, jonka tärkeimmät piirteet ovat *helppokäyttöisyys*, *pelkistetty ulkoasu* ja *muokattavuus*.
+
+### Tehtävät
+
+#### Viikko 1
+
+[gitlog.txt](https://github.com/hhelstela/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
+
+[komentorivi.txt](https://github.com/hhelstela/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
