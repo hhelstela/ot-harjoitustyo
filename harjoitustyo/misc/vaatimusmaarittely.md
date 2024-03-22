@@ -12,11 +12,11 @@ Sovelluksessa tulee olemaan kaksi käyttäjäroolia: _normaali käyttäjä_ ja _
 
 Sovellus koostuu kolmesta eri näkymästä
 Kirjautumisnäkymä
-![](./images/login_screen.jpeg)
+![](../images/login_screen.jpeg)
 Päänäkymä
-![](./images/main_view.jpeg)
+![](../images/main_view.jpeg)
 Yksityiskohtien ponnahdusikkuna
-![](./images/detail_popup.jpeg)
+![](../images/detail_popup.jpeg)
 
 Sovellus aukeaa kirjautumisnäkymään, josta on mahdollista siirtyä uuden käyttäjän luomisnäkymään tai onnistuneen kirjautumisen yhteydessä kirjaantuneen käyttäjän päänäkymään. Jos haluaa tarkastella yksityiskohtia, aukeaa ponnahdusikkuna, jossa näkyy tehtävän nimi ja yksityiskohdat.
 
