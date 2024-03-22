@@ -2,7 +2,7 @@
 
 ### Dokumentaatio
 - [Vaatimusmäärittely](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/vaatimusmaarittely.md)
-- [Tuntikirjanpito](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/misc/tuntikirjanpito.md)
+- [Tuntikirjanpito](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/misc/vaatimusmaarittely.md)
 ### Tehtävät
 
 #### Viikko 1
