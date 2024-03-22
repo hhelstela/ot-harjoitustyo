@@ -1,5 +1,8 @@
 ## Ohjelmistotekniikka harjoitustyö
 
+### Dokumentaatio
+- [Vaatimusmäärittely](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/vaatimusmaarittely.md)
+
 ### Tehtävät
 
 #### Viikko 1
