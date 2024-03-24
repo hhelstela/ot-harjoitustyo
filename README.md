@@ -14,4 +14,6 @@
 
 #### Viikko 2
 
+[tehtävät](https://github.com/hhelstela/ot-harjoitustyo/tree/main/laskarit/viikko2)
+
 #### Viikko 3
