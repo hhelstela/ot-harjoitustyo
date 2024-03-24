@@ -4,6 +4,7 @@
 - [Vaatimusmäärittely](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/misc/vaatimusmaarittely.md)
 - [Tuntikirjanpito](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/misc/tuntikirjanpito.md)
 ### Tehtävät
+[laskarit](https://github.com/hhelstela/ot-harjoitustyo/tree/main/laskarit)
 
 #### Viikko 1
 
