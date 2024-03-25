@@ -1,8 +1,8 @@
 ## Ohjelmistotekniikka harjoitustyö
 
 ### Dokumentaatio
-- [Vaatimusmäärittely](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/misc/vaatimusmaarittely.md)
-- [Tuntikirjanpito](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/misc/tuntikirjanpito.md)
+- [Vaatimusmäärittely](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
+- [Tuntikirjanpito](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/dokumentaatio/tuntikirjanpito.md)
 ### Tehtävät
 [laskarit](https://github.com/hhelstela/ot-harjoitustyo/tree/main/laskarit)
 
