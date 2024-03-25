@@ -5,7 +5,6 @@
 - [Tuntikirjanpito](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/hhelstela/ot-harjoitustyo/blob/main/harjoitustyo/dokumentaatio/changelog.md)
 ### Tehtävät
-[laskarit](https://github.com/hhelstela/ot-harjoitustyo/tree/main/laskarit)
 
 #### Viikko 1
 
@@ -18,4 +17,5 @@
 [tehtävät](https://github.com/hhelstela/ot-harjoitustyo/tree/main/laskarit/viikko2)
 
 #### Viikko 3
-[tehtavat](https://github.com/hhelstela/ot-harjoitustyo/tree/main/laskarit/viikko3)
+[Luokkakaavio](https://github.com/hhelstela/ot-harjoitustyo/blob/main/laskarit/viikko3/luokkakaavio.md)
+[Sekvenssikaavio](https://github.com/hhelstela/ot-harjoitustyo/blob/main/laskarit/viikko3/sekvenssikaavio.md)
