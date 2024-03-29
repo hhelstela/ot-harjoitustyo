@@ -5,7 +5,7 @@ class TaskRepository:
         self.db = sqlite3.connect(dbname)
         self.db.isolation_level = None
         try:
-            self.db.execute("CREATE TABLE Tasks (id INTEGER PRIMARY KEY, username TEXT, title TEXT, details TEXT, date INTEGER, done INTEGER)")
+            self.db.execute("CREATE TABLE Tasks (id INTEGER PRIMARY KEY, username TEXT, title TEXT, details TEXT, date DATE, done INTEGER)")
         except:
             pass
     
@@ -26,6 +26,12 @@ class TaskRepository:
     
     def add_table_to_db(self):
         self.db.execute("CREATE TABLE Tasks (id INTEGER PRIMARY KEY, username TEXT, title TEXT, details TEXT, date INTEGER, done INTEGER)")
+    
+    def change_task_to_done(self, id):
+        self.db.execute("UPDATE Tasks SET done = 1 WHERE id=(?)", [id])
+    
+    def remove_task(self, id):
+        self.db.execute("DELETE FROM Tasks WHERE id=(?)", [id])
 
 
 

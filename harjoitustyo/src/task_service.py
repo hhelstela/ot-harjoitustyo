@@ -1,20 +1,67 @@
-from entities.task import Task
 from entities.user import User
 from repositories.task_repository import TaskRepository
 from repositories.user_repository import UserRepository
+import datetime
+
 
 class TaskService:
     def __init__(self):
-        self._user = None
+        self.user = None
         self.task_repository = TaskRepository("tasks")
-        self._user_repository = UserRepository()
+        self.user_repository = UserRepository("users")
+        self.retrieved_tasks = None
 
     def login(self, username, password):
-        if self._user_repository.login_to_service(username, password):
-            self._user = username
+        if self.user_repository.login_to_service(username, password):
+            self.user = username
             return True
         else:
             return "Incorrect login credentials"
     
+    def create_user(self, username, password):
+        if self.user_repository.add_user(username, password):
+            return 'Account created'
+        else:
+            return "Couldn't create account"
+        
+    def add_task_to_repository(self, title, details):
+        if self.user != None:
+            taskdate = datetime.datetime.now()
+            repodate = f"{taskdate.year}-{taskdate.month}-{taskdate.day}"
+            self.task_repository.add_task(self.user, title, details, repodate)
+            return 'Added task to repo'
+        else:
+            return 'Not logged in'
+    
+    def get_tasks_from_repository(self):
+        if self.user != None:
+            tasks = self.task_repository.get_tasks_by_username(self.user)
+            self.retrieved_tasks = tasks
+            return 'Retrieved Tasks'
+        else:
+            return 'Not logged in'
+
+        
+    def task_to_done(self, id):
+        if self.retrieved_tasks == None:
+            return 'No tasks retrieved'
+        for task in self.retrieved_tasks:
+            if id == task[0]:
+                self.task_repository.change_task_to_done(id)
+                self.get_tasks_from_repository()
+                break 
+        else:
+            return "Couldn't find task with that id"
+
+    def remove_task_from_db(self, id):
+        if self.retrieved_tasks == None:
+            return 'No tasks retrieved'
+        for task in self.retrieved_tasks:
+            if id == task[0]:
+                self.task_repository.remove_task(id)
+                self.get_tasks_from_repository()
+                return 'Task removed'
+        return "Didn't find that task"
+
+    
 task_service = TaskService()
-print(task_service.login("henri", "helstelä"))
