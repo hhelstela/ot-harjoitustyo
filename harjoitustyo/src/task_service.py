@@ -5,6 +5,7 @@ import datetime
 
 
 class TaskService:
+    #jos muuttaisin luokan niin, että sille annetaan db nimet, jotta ei tarvitsisi olla erillistä testi db:tä?
     def __init__(self):
         self.user = None
         self.task_repository = TaskRepository("tasks")
