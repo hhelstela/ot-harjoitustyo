@@ -1,5 +1,5 @@
-from gui import GUI
-from login import Login
+from ui.gui import GUI
+from ui.login import Login
 
 #run to start the application
 

@@ -6,8 +6,8 @@ import datetime
 class TaskService:
     def __init__(self):
         self.user = None
-        self.task_repository = TaskRepository("tasks")
-        self.user_repository = UserRepository("users")
+        self.task_repository = TaskRepository("tasks.db")
+        self.user_repository = UserRepository("users.db")
         self.retrieved_tasks = None
 
     def login(self, username, password):
