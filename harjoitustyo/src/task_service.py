@@ -1,11 +1,9 @@
-from entities.user import User
 from repositories.task_repository import TaskRepository
 from repositories.user_repository import UserRepository
 import datetime
 
 
 class TaskService:
-    #jos muuttaisin luokan niin, että sille annetaan db nimet, jotta ei tarvitsisi olla erillistä testi db:tä?
     def __init__(self):
         self.user = None
         self.task_repository = TaskRepository("tasks")
@@ -15,15 +13,16 @@ class TaskService:
     def login(self, username, password):
         if self.user_repository.login_to_service(username, password):
             self.user = username
+            self.get_tasks_from_repository()
             return True
         else:
-            return "Incorrect login credentials"
+            return False
     
     def create_user(self, username, password):
         if self.user_repository.add_user(username, password):
-            return 'Account created'
+            return True
         else:
-            return "Couldn't create account"
+            return False
         
     def add_task_to_repository(self, title, details):
         if self.user != None:
@@ -63,6 +62,13 @@ class TaskService:
                 self.get_tasks_from_repository()
                 return 'Task removed'
         return "Didn't find that task"
+    
+    def return_user_tasks_by_date(self, date):
+        today_tasks = []
+        for task in self.retrieved_tasks:
+            if task[4] == f"{date.year}-{date.month}-{date.day}":
+                today_tasks.append(task)
+        print(today_tasks)
+        return today_tasks
 
     
-task_service = TaskService()
