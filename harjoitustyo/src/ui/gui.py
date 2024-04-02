@@ -2,15 +2,20 @@ import tkinter as tk
 import calendar
 import datetime
 from task_service import TaskService
+from tkinter import ttk
 
 class GUI:
     def __init__(self, user, password):
         self.root = tk.Tk()
         self.root.title("TaskApp")
         self.root.geometry("400x600")
+        self.cont = False
 
         self.calendar = calendar.Calendar()
         self.today = datetime.datetime.now()
+        self.weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+        wd = calendar.weekday(self.today.year, self.today.month, self.today.day)
+        self.weekdays = self.weekdays[wd:] + self.weekdays[:wd]
 
         self.user = user
         self.password = password
@@ -25,7 +30,7 @@ class GUI:
         #Menubar
         self.menubar = tk.Menu(self.root)
         self.usermenu = tk.Menu(self.menubar, tearoff=0)
-        self.usermenu.add_command(label='Change User')
+        self.usermenu.add_command(label='Change User', command=lambda : self.change_user())
         self.usermenu.add_command(label='Log Out')
         self.menubar.add_cascade(menu=self.usermenu, label=self.user)
 
@@ -44,6 +49,8 @@ class GUI:
         self.detaillabel.pack()
         self.detailtext = tk.Text(self.root, height=3, font=('Arial', 12))        
         self.detailtext.pack()
+        self.dropdown = ttk.Combobox(self.root, values=self.weekdays)
+        self.dropdown.pack()
         #add task button
         self.addbutton = tk.Button(self.root, text='Add Task', command=lambda : self.add_task())
         self.addbutton.pack()
@@ -107,8 +114,7 @@ class GUI:
 
         
         for i in range(7):
-            weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-            dayentry = tk.Label(self.calendarframe, text=f"{weekdays[i - (7 - self.today.weekday())]}")
+            dayentry = tk.Label(self.calendarframe, text=f"{self.weekdays[i]}")
             dayentry.grid(row=i, column=0, sticky='news')
         
         self.calendarframe.pack(fill=tk.BOTH)
@@ -119,13 +125,31 @@ class GUI:
         self.root.config(menu=self.menubar)
         self.root.mainloop()
     def add_task(self):
+        tasklists = [self.tasklist0, self.tasklist1, self.tasklist2, self.tasklist3, self.tasklist4, self.tasklist5, self.tasklist6]
+        weekday = self.dropdown.get()
+        distance = self.weekdays.index(weekday)
+        date = self.today + datetime.timedelta(distance)
         title = self.tasktitle.get()
         self.tasktitle.delete(0, tk.END)
         detail = self.detailtext.get('1.0', tk.END)
         self.detailtext.delete('1.0', tk.END)
-        self.tasklist0.insert(tk.END, title)
-        self.task_service.add_task_to_repository(title, detail)
+        tasklists[distance].insert(tk.END, title)
+        self.task_service.add_task_to_repository(title, detail, date)
         self.task_service.get_tasks_from_repository()
 
     def delete(self, tasklist):
+        tasklists = [self.tasklist0, self.tasklist1, self.tasklist2, self.tasklist3, self.tasklist4, self.tasklist5, self.tasklist6]
+        delta = tasklists.index(tasklist)
+        date = self.today + datetime.timedelta(delta)
+        title = tasklist.get(tk.ANCHOR)
+        for task in self.task_service.retrieved_tasks:
+            if task[4] == f"{date.year}-{date.month}-{date.day}" and task[2] == title:
+                self.task_service.remove_task_from_db(task[0])
+                break
         tasklist.delete(tk.ANCHOR)
+
+    def change_user(self):
+        print('hello')
+        self.cont = True
+        self.root.destroy()
+        

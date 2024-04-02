@@ -7,7 +7,7 @@
 | 29.03      |   3  |   Luokkien laajentamista, testit kuntoon tietokantojen luokille sekä tkinter kokeilua |
 | 31.03     |   2   | tkinteriin tutustumista  |
 |  01.04    |    2  |  Alkeellinen GUI |
-|       |      |   |
+|   02.04    |   1   | Lisäsin graafiseen käyttöliittymään toiminnallisuuksia  |
 |       |      |   |
 |       |      |   |
 |       |      |   |

@@ -7,8 +7,12 @@ from ui.login import Login
 #need to add functionality to add tasks to other dates than the first
 #need to add the functionality to change tasks to done from the UI
 #need to make the code more readable, and add better comments
+#delete tasks from database, not only from ui
 #...
-login_screen = Login()
-username = login_screen.username
-password = login_screen.password
-main = GUI(username, password)
+while True:
+    login_screen = Login()
+    username = login_screen.username
+    password = login_screen.password
+    main = GUI(username, password)
+    if main.cont == False:
+        break

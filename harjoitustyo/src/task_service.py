@@ -24,44 +24,43 @@ class TaskService:
         else:
             return False
         
-    def add_task_to_repository(self, title, details):
+    def add_task_to_repository(self, title, details, date):
         if self.user != None:
-            taskdate = datetime.datetime.now()
-            repodate = f"{taskdate.year}-{taskdate.month}-{taskdate.day}"
+            repodate = f"{date.year}-{date.month}-{date.day}"
             self.task_repository.add_task(self.user, title, details, repodate)
-            return 'Added task to repo'
+            return True
         else:
-            return 'Not logged in'
+            return False
     
     def get_tasks_from_repository(self):
         if self.user != None:
             tasks = self.task_repository.get_tasks_by_username(self.user)
             self.retrieved_tasks = tasks
-            return 'Retrieved Tasks'
+            return True
         else:
-            return 'Not logged in'
+            return False
 
         
     def task_to_done(self, id):
         if self.retrieved_tasks == None:
-            return 'No tasks retrieved'
+            return False
         for task in self.retrieved_tasks:
             if id == task[0]:
                 self.task_repository.change_task_to_done(id)
                 self.get_tasks_from_repository()
                 break 
         else:
-            return "Couldn't find task with that id"
+            return False
 
     def remove_task_from_db(self, id):
         if self.retrieved_tasks == None:
-            return 'No tasks retrieved'
+            return False
         for task in self.retrieved_tasks:
             if id == task[0]:
                 self.task_repository.remove_task(id)
                 self.get_tasks_from_repository()
-                return 'Task removed'
-        return "Didn't find that task"
+                return True
+        return False
     
     def return_user_tasks_by_date(self, date):
         today_tasks = []
