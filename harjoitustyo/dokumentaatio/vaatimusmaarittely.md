@@ -24,25 +24,25 @@ Sovellus aukeaa kirjautumisnäkymään, josta on mahdollista siirtyä uuden käy
 
 ### Ennen kirjautumista
 
-- Käyttäjä voi luoda järjestelmään käyttäjätunnuksen, johon liittyy myös salasana
-    - Käyttäjätunnuksen täytyy olla uniikki
-- Käyttäjä voi kirjautua järjestelmään
-    - Kirjautuminen onnistuu jos käyttäjätunnus ja salasana ovat kirjattu järjestelmään
-    - Kirjautuminen ei onnistu, jos käyttäjätunnusta ei ole rekisteröity
+- [x] Käyttäjä voi luoda järjestelmään käyttäjätunnuksen, johon liittyy myös salasana 
+    - [x] Käyttäjätunnuksen täytyy olla uniikki 
+- [x] Käyttäjä voi kirjautua järjestelmään
+    - [x] Kirjautuminen onnistuu jos käyttäjätunnus ja salasana ovat kirjattu järjestelmään
+    - [x] Kirjautuminen ei onnistu, jos käyttäjätunnusta ei ole rekisteröity
 
 
 ### Kirjautumisen jälkeen
 
-- Käyttäjä näkee oman kalenterinsa ja siihen tallennetut tehtävät
-- Käyttäjä voi luoda uuden tehtävän
-  - Luotu tehtävä näkyy ainoastaan sen luoneelle käyttäjälle
+- [x] Käyttäjä näkee oman kalenterinsa ja siihen tallennetut tehtävät
+- [x] Käyttäjä voi luoda uuden tehtävän
+  - [x] Luotu tehtävä näkyy ainoastaan sen luoneelle käyttäjälle
   - Tehtävä voi jäädä ikkunaan sovelluksessa, jossa on kaikki tehtävät, joita ei ole vielä lisätty millekään päivälle
   - Tehtävän voi siirtää suoraan kalenteriin
-- Käyttäjä voi merkitä tehtävän tehdyksi
+- [x] Käyttäjä voi merkitä tehtävän tehdyksi
 - Käyttäjä voi luokitella tehtävät tärkeyden mukaan
-- Käyttäjä voi merkitä tehtävään lisätietoja
-- Käyttäjä voi poistaa tehtävän
-- Käyttäjä voi kirjautua ulos järjestelmästä
+- [x] Käyttäjä voi merkitä tehtävään lisätietoja
+- [x] Käyttäjä voi poistaa tehtävän
+- [x] Käyttäjä voi kirjautua ulos järjestelmästä
 
 ## Jatkokehitysideoita
 
