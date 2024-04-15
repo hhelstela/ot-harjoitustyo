@@ -8,7 +8,7 @@ class UserRepository:
         try:
             self.db.execute(
                 "CREATE TABLE Users (id INTEGER PRIMARY KEY, username TEXT, password TEXT)")
-        except:
+        except FileExistsError:
             pass
 
     def add_user(self, username, password):
@@ -30,7 +30,7 @@ class UserRepository:
             if username_in_db[0][-1] == password:
                 return True
             return False
-        except:
+        except IndexError:
             return False
 
     def clear_all_users(self):

@@ -7,7 +7,7 @@ class TaskRepository:
         self.db.isolation_level = None
         try:
             self.db.execute("CREATE TABLE Tasks (id INTEGER PRIMARY KEY, username TEXT, title TEXT, details TEXT, date DATE, done INTEGER)")
-        except:
+        except FileExistsError:
             pass
 
     def add_task(self, username, title, details, date, done=0):
