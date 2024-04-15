@@ -4,6 +4,7 @@ import datetime
 from task_service import TaskService
 from tkinter import ttk
 
+
 class GUI:
     def __init__(self, user, password):
         self.root = tk.Tk()
@@ -59,6 +60,7 @@ class GUI:
         self.calendarframe.columnconfigure(0, weight=0)
         self.calendarframe.columnconfigure(1, weight=1)
         self.calendarframe.columnconfigure(2, weight=0)
+
         for i in range(7):
             self.calendarframe.rowconfigure(i, weight=1)
         
@@ -66,7 +68,6 @@ class GUI:
         self.tasklist0.grid(row=0, column=1, sticky='news')
         self.deletebutton0 = tk.Button(self.calendarframe, text='Done', command=lambda : self.delete(self.tasklist0))
         self.deletebutton0.grid(row=0, column=2, sticky='news')
-
         for item in self.task_service.return_user_tasks_by_date(self.today):
             self.tasklist0.insert(tk.END, item[2])
         
@@ -118,12 +119,10 @@ class GUI:
             dayentry.grid(row=i, column=0, sticky='news')
         
         self.calendarframe.pack(fill=tk.BOTH)
-
-
-
-
         self.root.config(menu=self.menubar)
         self.root.mainloop()
+
+
     def add_task(self):
         tasklists = [self.tasklist0, self.tasklist1, self.tasklist2, self.tasklist3, self.tasklist4, self.tasklist5, self.tasklist6]
         weekday = self.dropdown.get()
@@ -149,7 +148,6 @@ class GUI:
         tasklist.delete(tk.ANCHOR)
 
     def change_user(self):
-        print('hello')
         self.cont = True
         self.root.destroy()
         
